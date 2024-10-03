@@ -2,3 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+body {
+    background-image: linear-gradient(to left, #d9c49d, #a5caca);
+}
+#text-2{
+    color: rgb(183, 52, 16);
+    font-weight: bold;
+}
+
+#text-1{
+    color: rgb(1, 151, 68);
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.box {
+    /* border: 2px solid rgb(205, 201, 201);  */
+    /* background-color: rgb(255, 255, 255); */
+    margin: 4px 0px;
+    padding: 10px;
+    width: 33%;
+    box-sizing: border-box;
+    display: inline;
+    
+}
+
+.container{
+    margin: auto;
+    width: 1200px;
+}
+
+.container1{
+    display:flex;
+    /* display: inline-flex; */
+    /* flex-direction: column;  */
+    align-items: flex-start; /* Align items to the start of the column */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  
+     padding: 3px; 
+     /* width: 500px;   */
+  
+  
+    /* align-items: flex-start; */
+  
+
+
+}
+

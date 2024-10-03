@@ -1,6 +1,6 @@
 export const Test2 = () => {
   return (
-    <h3> Abhi Wait Karna hoga bhai  </h3>
+    <h3>Wait until you don't click! button on-off </h3>
   )
 }
 
