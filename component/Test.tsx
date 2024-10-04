@@ -3,7 +3,7 @@
 export const Test = () => {
   return (
 
-    <p> Programe on he click any button </p>
+    <p> Programe on he click any Color button </p>
 
   )
 }
