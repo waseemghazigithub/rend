@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <div>
-       <h1 className="text-[22px] mb-2 bg-slate-400 pl-2">Game view your luck! on click.</h1>
+       <h1 className="text-[22px] mb-2 bg-slate-400 pl-2">Game: View your luck! on click.</h1>
 
        { 
           show ? <div id="text-2">   <Test2/> </div> : <div id="text-1"><Test/></div>
