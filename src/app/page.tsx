@@ -1,4 +1,5 @@
 "use client"
+import React from 'react';
 import { useState } from "react";
 import bilal, { Test } from "../../component/Test"
 import Test2 from "../../component/Test2";
@@ -6,8 +7,8 @@ import Props from "../../component/Props";
 import Image from "next/image";
 
 
-export let scor1: number = 0; // global variable
-export const setGlobalVariable = (value:number) => {
+  let scor1: number = 0; // global variable
+  export const setGlobalVariable = (value:number) => {
   scor1 = value;
   return(scor1)
 };
@@ -18,6 +19,7 @@ export default function Home() {
   const [luck, setluck]= useState("Color")
   const [clickcount, setclickcount]= useState(5)
   const [pl1, setpl1]=useState(0)
+  
 
   const changeCounter=()=>{
     setclickcount(clickcount-1)
