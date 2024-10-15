@@ -11,14 +11,13 @@ import cyan1 from "../dataimage/cyan.jpg";
 import cyan2 from "../dataimage/cyan2.jpg";
 import cyan3 from "../dataimage/cyan3.jpg";
 
-import  {setGlobalVariable} from "../src/app/page"
+
 //import  {scor1,setGlobalVariable} from "../src/app/page"
 // const Props=(props:{name:string, cast:string})=>{
-const Props = ({ cname, onoff, clickno,plary1 }: { cname: string; onoff: boolean; clickno: number;plary1:number  }) => {
+const Props = ({ cname, onoff, clickno,plary1,scor1 }: { cname: string; onoff: boolean; clickno: number;plary1:number;scor1:number  }) => {
   //console.log(props)
   // Variable define.
-  let scor1=setGlobalVariable(0)
-  
+   
   let def: string = cname;
   let rcv: number = 0;
   let cnumber:number =clickno
@@ -66,7 +65,7 @@ const Props = ({ cname, onoff, clickno,plary1 }: { cname: string; onoff: boolean
     zero=true;
     cnumber=0;
     player1score=0;
-    setGlobalVariable(0);
+    scor1=0
    
   }
   else {
@@ -76,7 +75,7 @@ const Props = ({ cname, onoff, clickno,plary1 }: { cname: string; onoff: boolean
 
   luckytrue = 	lnum.includes(picname);
   if (luckytrue==true) {
-   player1score=setGlobalVariable(10+player1score);
+   scor1=(10+scor1);
   }
 
 
@@ -105,7 +104,7 @@ const Props = ({ cname, onoff, clickno,plary1 }: { cname: string; onoff: boolean
             <p id="text-2">you have now {cnumber} click</p>
             {zero ?(<p className="box" id="text-2" > You have completed your chances </p> ) :(<p  className="box" id="text-1"> Chance remaining </p>)}
             
-            <p id="text-2"> Player 1  Score =   {player1score}</p>
+            <p id="text-2"> Player 1  Score =   {scor1}</p>
             </p> 
             
         )}

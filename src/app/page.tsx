@@ -8,10 +8,10 @@ import Image from "next/image";
 
 
   //export let scor1: number = 0; // global variable
-  export const setGlobalVariable = (value:number) => {
-  //scor1 = value;
-  return(value)
-};
+//   const setGlobalVariable = (value:number) => {
+//   //scor1 = value;
+//   return(value)
+// };
 
 export default function Home() {
 
@@ -19,7 +19,7 @@ export default function Home() {
   const [luck, setluck]= useState("Color")
   const [clickcount, setclickcount]= useState(5)
   const [pl1, setpl1]=useState(0)
-  
+  const [sc1, setscor1]=useState(0)
 
   const changeCounter=()=>{
     setclickcount(clickcount-1)
@@ -36,7 +36,7 @@ export default function Home() {
        
        {/* <br/> */}
        <hr></hr><br />
-       <button onClick={()=>{setshow(!show);setclickcount(5);setpl1(0);setGlobalVariable(0) }} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+       <button onClick={()=>{setshow(!show);setclickcount(5);setpl1(0) }} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
  On-Off </button>
  <div className="inline-block">
  <button onClick={()=>{setluck("Blue") ;changeCounter(); }} type="button" className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 ">Blue</button>
@@ -54,7 +54,7 @@ export default function Home() {
 </div>
 <br /><hr></hr><br/>
 
-  <Props cname={luck} onoff={show} clickno={clickcount} plary1={pl1} />
+  <Props cname={luck} onoff={show} clickno={clickcount} plary1={pl1} scor1={sc1} />
  <div> 
   {/* <Image src={blue1} alt="Sole" className="w-[350px] h-[300px] ml-5 rounded-2xl"/> */}
   {/* <Image src={require("../../dataimage/Aswah.jpeg")} alt="Tubwell" className="w-[200px] h-[300px] ml-5 rounded-2xl"/> */}
@@ -62,3 +62,4 @@ export default function Home() {
    </div>
   );
 }
+
