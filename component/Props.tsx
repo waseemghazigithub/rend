@@ -11,12 +11,14 @@ import cyan1 from "../dataimage/cyan.jpg";
 import cyan2 from "../dataimage/cyan2.jpg";
 import cyan3 from "../dataimage/cyan3.jpg";
 
-import  {scor1,setGlobalVariable} from "../src/app/page"
-//
+import  {setGlobalVariable} from "../src/app/page"
+//import  {scor1,setGlobalVariable} from "../src/app/page"
 // const Props=(props:{name:string, cast:string})=>{
 const Props = ({ cname, onoff, clickno,plary1 }: { cname: string; onoff: boolean; clickno: number;plary1:number  }) => {
   //console.log(props)
   // Variable define.
+  let scor1=setGlobalVariable(0)
+  
   let def: string = cname;
   let rcv: number = 0;
   let cnumber:number =clickno

@@ -7,10 +7,10 @@ import Props from "../../component/Props";
 import Image from "next/image";
 
 
-  let scor1: number = 0; // global variable
+  //export let scor1: number = 0; // global variable
   export const setGlobalVariable = (value:number) => {
-  scor1 = value;
-  return(scor1)
+  //scor1 = value;
+  return(value)
 };
 
 export default function Home() {
