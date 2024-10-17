@@ -77,19 +77,18 @@ const Props = ({ cname, onoff, clickno,plary1,scor1 }: { cname: string; onoff: b
   if (luckytrue==true) {
    scor1=(10+scor1);
   }
-
-
   
    return (
     // <h1> Hello {props.name +" "+ props.cast} </h1>   without destructure
-    <div className="container">
+    // <div className="container">
+      <div>
       <p id="text-2"> {cname} </p>
-      <h1> {` You have selected ${cname} button:`} </h1> <h1>{`${def}`} </h1>
+      <h1> {` You have selected ${cname} button:`} </h1> <p>{`${def}`} </p>
       <div className="container1">
         <Image
           src={img}
           alt="Sole"
-          className="w-[350px] h-[200px] ml-2 rounded-2xl align-middle "
+          className="w-[200px] h-[100px] ml-2 rounded-2xl align-middle "
         />
 
         {onoff ? (
