@@ -50,7 +50,7 @@ export default function Home() {
 <button onClick={()=>setluck("Brown")} type="button" className="text-white bg-gradient-to-r from-yellow-800 via-yellow-600 to-yellow-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-brown-300 dark:focus:ring-brown-800 shadow-lg shadow-yellow-500/50 dark:shadow-lg dark:shadow-yellow-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Brown</button>  
 <button onClick={()=>setluck("Yellow")} type="button" className="text-white bg-gradient-to-r from-yellow-400 via-yellow-400 to-yellow-300 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:focus:ring-yellow-800 shadow-lg shadow-yellow-500/50 dark:shadow-lg dark:shadow-yellow-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Yellow</button> 
 <button onClick={()=>setluck("White")} type="button" className="text-white bg-gradient-to-r from-black via-black-50 to-black-50 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-black-500 dark:focus:ring-black-400 shadow-lg shadow-black-400/50 dark:shadow-lg dark:shadow-black-400/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">White</button> 
-<button onClick={()=>setluck("End")} className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"> End</button>
+<button onClick={()=>setluck("End")} type="button" className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"> End</button>
 </div>
 <br /><hr></hr><br/>
 
