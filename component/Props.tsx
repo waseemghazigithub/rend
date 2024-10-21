@@ -10,19 +10,20 @@ import green3 from "../dataimage/Green3.jpg";
 import cyan1 from "../dataimage/cyan.jpg";
 import cyan2 from "../dataimage/cyan2.jpg";
 import cyan3 from "../dataimage/cyan3.jpg";
-
+import offon from "../dataimage/offon.jpg";
+import GlobalVer from "../src/app/config"
 
 //import  {scor1,setGlobalVariable} from "../src/app/page"
 // const Props=(props:{name:string, cast:string})=>{
 const Props = ({ cname, onoff, clickno,plary1,scor1 }: { cname: string; onoff: boolean; clickno: number;plary1:number;scor1:number  }) => {
-  //console.log(props)
+  console.log(Props)
   // Variable define.
    
   let def: string = cname;
   let rcv: number = 0;
   let cnumber:number =clickno
   let zero: boolean =false;
-  let player1score:number=scor1;
+  let player1score:number=    scor1;
   let player2score:number
   let img = blue0;
   let lnum:string[]=['B2','G1','C1']
@@ -30,13 +31,13 @@ const Props = ({ cname, onoff, clickno,plary1,scor1 }: { cname: string; onoff: b
   let luckytrue: boolean;
   def = rnumber(cname);
   //==================================
-   if ((cname === "Blue") && (rcv == 1)) {
+   if ((cname === "Blue") && (rcv === 1)) {
       img = blue1;
     }
-  if ((cname === "Blue") && (rcv == 2)) {
+  if ((cname === "Blue") && (rcv === 2)) {
       img = blue2;
        }
- if ((cname === "Blue") && (rcv == 3)) {
+ if ((cname === "Blue") && (rcv === 3)) {
     img = blue3;
    }
  
@@ -60,22 +61,29 @@ const Props = ({ cname, onoff, clickno,plary1,scor1 }: { cname: string; onoff: b
     img = cyan3;
   }
 
+  console.log(rcv)
 
   if (cnumber < 0) {
     zero=true;
     cnumber=0;
     player1score=0;
     scor1=0
+    GlobalVer.scor=0
    
   }
   else {
     zero=false;
   }
 
+ if (onoff===true){
+  img = offon;
+ }
 
   luckytrue = 	lnum.includes(picname);
-  if (luckytrue==true) {
+  if (luckytrue==true && onoff===false) {
    scor1=(10+scor1);
+   
+   {GlobalVer.scor= GlobalVer.scor+10}
   }
   
    return (
@@ -103,7 +111,7 @@ const Props = ({ cname, onoff, clickno,plary1,scor1 }: { cname: string; onoff: b
             <p id="text-2">you have now {cnumber} click</p>
             {zero ?(<p className="box" id="text-2" > You have completed your chances </p> ) :(<p  className="box" id="text-1"> Chance remaining </p>)}
             
-            <p id="text-2"> Player 1  Score =   {scor1}</p>
+            <p id="text-2"> Player 1  Score =   {GlobalVer.scor}</p>
             </p> 
             
         )}
