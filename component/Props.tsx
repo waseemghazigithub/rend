@@ -16,7 +16,7 @@ import GlobalVer from "../src/app/config"
 //import  {scor1,setGlobalVariable} from "../src/app/page"
 // const Props=(props:{name:string, cast:string})=>{
 const Props = ({ cname, onoff, clickno,plary1,scor1 }: { cname: string; onoff: boolean; clickno: number;plary1:number;scor1:number  }) => {
-  console.log(Props)
+  //console.log(Props)
   // Variable define.
    
   let def: string = cname;
@@ -105,14 +105,14 @@ const Props = ({ cname, onoff, clickno,plary1,scor1 }: { cname: string; onoff: b
             Select on-off button for start.{" "}
           </p>
         ) : (
-          <p className="box" id="text-1">
+          <div className="box" id="text-1">
             {" "}
             You have only 5 clicks to find a picture of a human
             <p id="text-2">you have now {cnumber} click</p>
             {zero ?(<p className="box" id="text-2" > You have completed your chances </p> ) :(<p  className="box" id="text-1"> Chance remaining </p>)}
             
             <p id="text-2"> Player 1  Score =   {GlobalVer.scor}</p>
-            </p> 
+            </div> 
             
         )}
         </div>
