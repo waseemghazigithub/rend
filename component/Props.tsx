@@ -91,12 +91,12 @@ const Props = ({ cname, onoff, clickno,plary1,scor1 }: { cname: string; onoff: b
     // <div className="container">
       <div>
       <p id="text-2"> {cname} </p>
-      <h1> {` You have selected ${cname} button:`} </h1> <p>{`${def}`} </p>
-      <div className="container1">
+      <h1> {` Your selection ${cname} button:`} </h1> <p>{`${def}`} </p>
+      <div className="mt-2 grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-2">
         <Image
           src={img}
           alt="Sole"
-          className="w-[200px] h-[100px] ml-2 rounded-2xl align-middle "
+          className="w-[300px] h-[300px] ml-2 rounded-2xl align-middle "
         />
 
         {onoff ? (

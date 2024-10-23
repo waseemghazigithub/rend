@@ -28,7 +28,7 @@ export default function Home() {
      }
 
   return (
-    <div className="p-4">
+    <div className="p-4b">
        <h1 className="text-[18px] sm:text-[22px] mb-2 bg-slate-400 pl-2">Game: View your luck! on click.</h1>
 
        { 
